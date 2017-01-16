@@ -1,0 +1,57 @@
+.countdown-dialog {
+	@include dialog-frame;
+
+	.dialog-wrapper {
+		@include dialog-wrapper(400px);
+		z-index: 150;
+
+		.dialog {
+			@include dialog(400px, 300px);
+
+			.title {
+				color: #000;
+				font-size: 1.2em;
+				font-weight: bold;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+
+			.image {
+				text-align: center;
+
+				img {
+					height: 60px;
+					width: 60px;
+				}
+			}
+
+			.content {
+				color: $theme-font-color;
+				font-size: .8em;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+
+				.current-issue {
+					color: #F00;
+				}
+
+				.next-issue {
+					color: #F00;
+				}
+			}
+
+			.button-zone {
+				bottom: 20px;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+
+				.sure {
+					width: 200px;
+				}
+			}
+		}
+	}
+}

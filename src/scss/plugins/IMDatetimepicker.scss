@@ -1,0 +1,27 @@
+.im-datetimepicker {
+	display: inline-block;
+	position: relative;
+
+	.time-label {
+		color: $theme-font-color;
+		font-size: .75em;
+		left: 10px;
+		position: absolute;
+		top: 0;
+	}
+
+	input {
+		border: 1px solid #EEEEEE;
+		color: #A7A7A7;
+		font-size: .75em;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 10px;
+		text-align: right;
+		width: 100%;
+
+		&::-ms-clear { 
+			display: none;
+		}
+	}
+}

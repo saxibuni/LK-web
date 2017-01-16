@@ -1,0 +1,50 @@
+.im-checkbox {
+	cursor: pointer;
+
+	&.checked {
+		.circle {
+			background-color: $theme-bk-color;
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+
+	.circle {
+	    background: #FFF;
+	    border: 1px solid $theme-bk-color;
+	    border-radius: 50%;
+	    cursor: pointer;
+	    display: inline-block;
+	    height: 14px;
+	    position: relative;
+	    top: 2px;
+	    width: 14px;
+
+	    &:after {
+		    transition: opacity 0.05s ease-in-out;
+		    -webkit-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		    position: absolute;
+		    top: 33%;
+		    left: 25%;
+		    display: table;
+		    width: 7px;
+		    height: 3px;
+		    border: 1px solid #FFF;
+		    border-top: 0;
+		    border-right: 0;
+		    content: ' ';
+		    opacity: 0;
+	    }
+	}
+
+	.text {
+		display: inline-block;
+		font-size: .8em;
+		margin-left: 8px;
+		vertical-align: bottom;
+	}
+}

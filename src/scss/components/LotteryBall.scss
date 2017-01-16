@@ -1,0 +1,62 @@
+.lottery-ball {
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+
+	.description {
+		color: $theme-font-color;
+		font-size: .7em;
+		margin: 10px 0;
+	}
+
+	ul {
+        .three-d-y {
+            perspective: 1000;
+            /*transition: 1s;*/
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+		li {
+			background-color: $theme-bk-color;
+			border-radius: 50%;
+			color: $theme-bk-font-color;
+			display: inline-block;
+			font-size: 1.6em;
+			font-weight: bold;
+			height: 50px;
+			margin-right: 20px;
+			text-align: center;
+			width: 50px; 
+
+			span {
+				cursor: default;
+				display: inline-block;
+				height: 50px;
+				line-height: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1380px) {
+	.lottery-ball { 
+		.description {
+			margin: 12px 0;
+		}
+
+		ul {
+			li {
+				font-size: 1em;
+				height: 40px;
+				margin-right: 5px;
+				width: 40px; 
+
+				span {
+					height: 40px;
+					line-height: 40px;
+				}
+			}
+		}
+	}
+}

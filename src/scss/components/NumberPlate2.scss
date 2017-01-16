@@ -1,0 +1,154 @@
+.number-plate2 {
+	.plate2-row {
+
+		.name {
+			color: #333;
+			display: inline-block;
+			float: left;
+		    font-size: .8em;
+		    font-weight: bold;
+		    padding-left: 15px;
+		    margin-top: 23px;
+		    width: 10%;
+		}
+
+		.plate2-balls {
+			display: inline-block;
+			float: left;
+			margin-top: 10px;
+			width: 50%;
+
+			.ball-item {
+				display: inline-block;
+				width: 9%;
+
+				span {
+					border: 1px solid #C6CADB;
+					border-radius: 50%;
+					color: $theme-bk-color;
+					cursor: pointer;
+					display: inline-block;
+					font-size: .8em;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					transition: all .5s;
+					width: 40px;
+				}
+
+				&.selected {
+					span {
+						background-color: $theme-bk-color;
+						border-color: $theme-bk-color;
+						color: #FFF;
+					}
+				}
+			}
+
+			.run-item {
+				span {
+					background-color: #ABB4D6;
+					border-color: $theme-bk-color;
+					color: #FFF;
+				}
+			}
+		}
+	
+		.plate2-operations {
+			display: inline-block;
+			float: right;
+			margin-top: 10px;
+			text-align: center;
+			width: 40%;
+
+			.operation-item {
+				display: inline-block;
+				width: 16%;
+
+				span {
+					border: 1px solid #C6CADB;
+					border-radius: 20px;
+					color: $theme-bk-color;
+					cursor: pointer;
+					display: inline-block;
+					font-size: .8em;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					transition: all .5s;
+					width: 60px;
+				}
+
+				&.selected {
+					span {
+						background-color: $theme-bk-color;
+						border-color: $theme-bk-color;
+						color: #FFF;
+					}
+				}
+
+				&:last-child:active {
+					span {
+						background-color: $theme-bk-color;
+						border: 0;
+						color: #FFF;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1240px) { 
+	.number-plate2 {
+		.plate2-row {
+			.plate2-balls {
+				.ball-item {
+					span {
+						height: 35px;
+						line-height: 35px;
+						width: 35px;
+					}
+				}
+			}
+		
+			.plate2-operations {
+				.operation-item {
+					span {
+						height: 35px;
+						line-height: 35px;
+						width: 52px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1155px) { 
+	.number-plate2 {
+		.plate2-row {
+			.plate2-balls {
+				.ball-item {
+					span {
+						font-size: .7em;
+						height: 28px;
+						line-height: 28px;
+						width: 28px;
+					}
+				}
+			}
+		
+			.plate2-operations {
+				.operation-item {
+					span {
+						font-size: .7em;
+						height: 28px;
+						line-height: 28px;
+						width: 42px;
+					}
+				}
+			}
+		}
+	}
+}

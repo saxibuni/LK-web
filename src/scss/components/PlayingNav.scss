@@ -1,0 +1,184 @@
+.playing-nav {
+	background-color: #FFF;
+	padding-bottom: 20px;
+
+	.playing-family {
+		border-bottom: 1px solid #F2F2F2;
+		cursor: pointer;
+		height: 50px;
+		line-height: 50px;
+
+		.family-item {
+			font-size: .85em;
+			font-weight: bold;
+			text-align: center;
+
+			span {
+				display: inline-block;
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+		.stick {
+			background-color: $theme-bk-color;
+			width: 8.33%;
+			height: 2px;
+			left: 0;
+			position: relative;
+			top: 48px;
+			transition: left .5s;
+		}
+	}
+
+	.top-gap {
+		margin-top: 10px;
+		padding-left: 10px;
+	}
+
+	.playing-groups {
+		margin-top: 20px;
+		margin-left: 30px;
+
+		.playing-group {
+			margin-bottom: 10px;
+
+			.group-name {
+				font-size: .8em;
+				font-weight: bold;
+				padding: 5px 0;
+				text-align: left;
+			}
+
+			.method-item {
+				color: $theme-font-color;
+				cursor: pointer;
+				font-size: .8em;
+				margin-bottom: 2px;
+
+				.method-item-name {
+					border-radius: 20px;
+					display: inline-block;
+					padding: 5px 15px;
+					text-align: center;
+					transition: all .2s;
+				}
+
+				&:hover {
+					.method-item-name {
+						background-color: $theme-bk-color;
+						color: $theme-bk-font-color;
+						font-weight: bold;
+					}
+				}
+
+				&.selected {
+					.method-item-name {
+						background-color: $theme-bk-color;
+						color: $theme-bk-font-color;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+
+	.divider {
+		color: #EEEEEE;
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	.unit-group-wrapper {
+		padding-left: 25px;
+	}
+
+	.playing-description {
+		cursor: pointer;
+		padding-top: 20px;
+		position: relative;
+		text-align: right;
+
+		.tip {
+			background-image: url("../img/tip.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			display: inline-block;
+			height: 15px;
+			width: 15px;
+			vertical-align: middle;
+		}
+
+		.text {
+			color: $theme-font-color;
+			font-size: .8em;
+			margin-left: 10px;
+		}
+	}
+
+	.playing-description-k3 {
+		border-bottom: 1px solid #F2F2F2;
+		font-size: .85em;
+		text-align: right;
+
+		.tip {
+			margin-right: 20px;
+		    
+		    .text {
+			    color: #828282;
+			    font-size: 12px;
+			    margin-left: 10px;
+		    }
+		}
+
+		.im-tip {
+			transform: translateX(0);
+
+			.tip-content {
+				color: $theme-font-color;
+				font-size: 12px;
+				width: 250px;
+				line-height: 30px;
+				min-height: 20px;
+				padding: 5px 10px;
+				text-align: left;
+			}
+
+			.arrow {
+				left: 90%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.playing-nav { 
+		.playing-family {
+			.family-item {
+				font-size: .75em;
+			}
+		}
+
+		.playing-groups {
+			.playing-group {
+				.group-name {
+					font-size: .7em;
+				}
+
+				.method-item {
+					font-size: .7em;
+
+					.method-item-name {
+						padding: 5px 10px;
+					}
+				}
+			}
+		}
+
+		.playing-description {
+			.text {
+				font-size: .7em;
+			}
+		}
+	}
+}

@@ -1,0 +1,360 @@
+.chase-number-dialog {
+	@include dialog-frame;
+
+	.dialog-wrapper {	
+		@include dialog-wrapper(650px);
+
+		.dialog {
+			@include dialog(650px, 450px);
+			padding: 0 10px;
+
+			.tabs {
+				height: 50px;
+				padding: 15px 0;
+				position: relative;
+
+				li {
+					color: #000;
+					cursor: pointer;
+					display: inline-block;
+					font-size: 1em;
+					font-weight: bold;
+					padding-bottom: 10px;
+					text-align: center;
+					width: 100px;
+
+					&.active {
+						color: $theme-bk-color;
+					}
+				}
+
+				.close {
+				    position: absolute;
+				    top: 15px;
+				    right: 4px;
+				    color: #000;
+				}
+			}
+
+			.stick {
+				background-color: $theme-bk-color;
+				width: 100px;
+				height: 2px;
+				left: 0;
+				position: relative;
+				top: 1px;
+
+				transition: left 0.5s;
+				-moz-transition: left 0.5s; 
+				-webkit-transition: left 0.5s;
+				-o-transition: left 0.5s;
+			}
+
+			.cont {
+				background-color: #FFF;
+				border-top: 1px solid #DCDCDC;
+				padding: 10px;
+				padding-bottom: 0;
+
+				.im-checkbox .circle {
+					top: 2px;
+				}
+
+				.row1 {
+				    line-height: 50px;
+
+					.name {
+						color: $theme-font-color;
+						display: inline-block;
+						font-size: .8em;
+						margin-top: 9px;
+						padding: 0 10px;
+						text-align: left;
+					}
+
+					.add-chase-number {
+						margin-left: 5px;
+					}
+
+					.form-group {
+						margin-bottom: 0;
+						text-align: left;
+					}
+					.sign{
+					  padding-top: 10px;
+					  margin-left: -9px;
+					  color: #828282;
+					}
+					input {
+						display: inline-block;
+						font-size: .75em;
+						padding: 6px;
+						width: 85px;
+					}
+
+				    .chase-dialog-add-chase-number {
+				    	margin-top: 15px;
+				    }
+
+				    .col-md-4 {
+				    	text-align: center;
+				    }
+				}
+
+				.row2 {
+					table {
+						background-color: #F9F9F9;
+						height: 150px;
+						padding-left: 0;
+						padding-right: 0;
+						width: 100%;
+
+						thead {
+							display: block;
+
+							tr {
+								background-color: #F9F9F9;
+								border-bottom: 1px solid #F2F2F2;
+								padding-right: 20px;
+
+								td {
+									font-size: .8em;
+								}
+							}
+						}
+
+						tbody {
+							display: block;
+							height: 150px;
+							overflow-y: scroll;
+						}
+						
+						tr {
+							display: block;
+							height: 30px;
+							line-height: 30px;
+							width: 100%;
+
+							td {
+								color: $theme-font-color;
+								display: inline-block;
+								font-size: .7em;
+								text-align: center;
+
+								.bs-input {
+									border: 1px solid #EEEEEE;
+									border-radius: 2px;
+								    display: inline-block;
+								    font-size: 1em;
+								    height: 20px;
+								    line-height: 20px;
+								    text-align: center;
+								    width: 40px;
+								}
+							}
+
+							.cancel-current {
+								background-color: #E3E7F3;
+								border: 1px solid #CFD2E5;
+								border-radius: 3px;
+								color: $theme-bk-color;
+								cursor: pointer;
+								display: inline-block;
+								height: 25px;
+								line-height: 25px;
+								width: 50px;
+							}
+						}
+					}
+				}
+
+				.row3 {
+					border-bottom: 1px solid #EEEEEE;
+					color: $theme-font-color;
+					height: 60px;
+					line-height: 60px;
+					position: relative;
+
+					.summary {
+						font-size: .8em;
+						left: 0;
+						position: absolute;
+
+						.value {
+							color: #FF7B7C;
+						}
+					}
+
+					.operations {
+						font-size: .8em;
+						position: absolute;
+						right: 0;
+
+						.im-checkbox {
+							display: inline-block;
+							margin-right: 10px;
+
+							.text {
+								font-size: 1em;
+							}
+						}
+
+						.clear-chase-number {
+						    border: 1px solid $theme-bk-color;
+						    color: $theme-bk-color;
+						    cursor: pointer;
+						    display: inline-block;
+						    font-size: .9em;
+						    height: 30px;
+						    line-height: 30px;
+						    padding: 0 15px;
+						    border-radius: 20px;
+						}
+					}
+				}
+
+				.row4 {
+					height: 50px;
+					margin-top: 15px;
+					padding: 0 10%;
+					text-align: center;
+
+					.cancel {
+						display: inline-block;
+						width: 40%;
+					}
+
+					.ok {
+						display: inline-block;
+						width: 40%;
+					}
+				}
+			}
+
+			.content1 {
+				.row2 {
+					table {
+						padding-left: 0;
+						padding-right: 0;
+
+						.td-width {
+							width: 12.5%;
+						}
+						.td-w1{
+						  width: 10%;
+						}
+						.td-w2{
+						  width: 14%;
+						}
+						.td-w3{
+						  width: 10%;
+						}
+						.td-w4{
+						  width: 8%;
+						}
+						.td-w5{
+						  width: 15%;
+						}
+						.td-w6{
+						  width: 15%;
+						}
+						.td-w7{
+						  width: 16%;
+						}
+						.td-w8{
+						  width:12%;
+						}
+					}
+				}
+			}
+
+			.content2 {
+				display: none;
+
+				.row2 {
+					table {
+						padding-left: 2%;
+						padding-right: 2%;
+
+						.td-width {
+							width: 16%;
+						}
+
+						tr {
+							td {
+								&:nth-child(1) {
+									width: 10%;
+								}
+
+								&:nth-child(5) {
+									width: 28%;
+								}
+
+								&:nth-child(6) {
+									width: 10%;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.content3 {
+				display: none;
+
+				.row1 {
+					.form-group {
+						display: inline-block;
+
+						&:first-child {
+							margin-left: -10px;
+						}
+
+						input {
+							display: inline-block;
+							font-size: .75em;
+							padding: 6px;
+							width: 50px;
+						}
+					}
+
+					.button-zone {
+						display: inline-block;
+						margin-left: 40px;
+						vertical-align: top;
+					}
+				}
+
+				.row2 {
+					table {
+						padding-left: 2%;
+						padding-right: 2%;
+
+						.td-width {
+							width: 16%;
+						}
+
+						tr {
+							td {
+								&:nth-child(1) {
+									width: 10%;
+								}
+
+								&:nth-child(5) {
+									width: 28%;
+								}
+
+								&:nth-child(6) {
+									width: 10%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

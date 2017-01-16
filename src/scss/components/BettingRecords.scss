@@ -1,0 +1,217 @@
+.betting-records {
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 70px;
+	transition: all .3s;
+
+	.dialog-wrapper {
+		background-color: #FFF;
+		border-top: 1px solid #EEEEEE;
+		color: $theme-font-color;
+		height: 550px;
+		padding-left: 20px;
+		position: absolute;
+		left: 0;
+		overflow-x: hidden;
+		top: -700px;
+		width: 100%;
+		z-index: 120;
+
+		.head-height {
+			height: 50px;
+			line-height: 50px;
+		}
+
+		.zone2  {
+			font-size: .8em;
+			height: 100%;
+			text-align: right;
+			width: 100%;
+
+			.value {
+				color: $theme-bk-color;
+			}
+		}
+
+		.zone3  {
+			font-size: .8em;
+			height: 100%;
+			text-align: right;
+			width: 100%;
+
+			.value {
+				color: $theme-bk-color;
+			}
+			
+			.close-icon {
+				cursor: pointer;
+				font-size: 1.2em;
+				margin: 0 2em;
+			}
+
+			.go-to-records-query {
+				cursor: pointer;
+			}
+		}
+
+		.tabs {
+			li {
+				color: #000;
+				cursor: pointer;
+				display: inline-block;
+				font-size: 1em;
+				font-weight: bold;
+				height: 50px;
+				line-height: 50px;
+				padding-bottom: 10px;
+				text-align: center;
+				width: 120px;
+
+				&.active {
+					color: $theme-bk-color;
+				}
+			}
+		}
+
+		.stick {
+			background-color: $theme-bk-color;
+			width: 120px;
+			height: 2px;
+			left: 0;
+			position: relative;
+			top: -6px;
+
+			transition: left 0.5s;
+			-moz-transition: left 0.5s; 
+			-webkit-transition: left 0.5s;
+			-o-transition: left 0.5s;
+		}
+
+		.table-zone {
+			font-size: .75em;
+			height: 100%;
+			width: 100%;
+		  	min-height: 385px;
+
+			table {
+				height: 100%;
+				width: 100%;
+				thead {
+					tr {
+						background-color: #F7F7F7;
+						border-bottom: 1px solid #F2F2F2;
+						color: #000;
+						height: 35px;
+
+						td {
+							text-align: center;
+							padding: 0 10px;
+						}
+
+
+					}
+				}
+
+				tbody {
+					padding: 10px 20px;
+
+					tr {
+						border-bottom: 1px solid #F2F2F2;
+						height: 35px;
+
+						&:hover {
+							.dot {
+								background-color: #DCDCDC;
+							}
+
+							td {
+								color: #667AB5;
+							}
+						}
+
+						.lottery-number {
+							cursor: pointer;
+						}
+
+						td {
+							text-align: center;
+							padding: 0 10px;
+
+							.dot {
+								background-color: #FFF;
+								border: 1px solid #DCDCDC;
+								border-radius: 4px;
+								display: inline-block;
+								height: 8px;
+								margin-right: 10px;
+								width: 8px;
+							}
+
+							.cancel-order {
+								background-color: #68D3B5;
+								border-radius: 3px;
+								color: #FFF;
+								cursor: pointer;
+								display: inline-block;
+								height: 25px;
+								line-height: 25px;
+								width: 50px;
+							}
+
+							.order-detail {
+								background-color: #E3E6F5;
+								border-radius: 3px;
+								color: $theme-bk-color;
+								cursor: pointer;
+								display: inline-block;
+								height: 25px;
+								line-height: 25px;
+								width: 50px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.pager-zone {
+			height: 50px;
+			line-height: 50px;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.content1 {
+		    td:nth-child(5) {
+		        max-width: 200px;
+		        overflow: hidden;
+		        white-space: nowrap;
+		        text-overflow: ellipsis;
+		        padding-left: 30px;
+		    }
+		    thead {
+		        td:nth-child(5) {
+		            text-align: center;
+		        }
+		    }
+		}
+		
+		.content2 {
+		    td:nth-child(4) {
+		        max-width: 200px;
+		        overflow: hidden;
+		        white-space: nowrap;
+		        text-overflow: ellipsis;
+		        padding-left: 30px;
+		    }
+		    thead {
+		        td:nth-child(4) {
+		            text-align: center;
+		        }
+		    }
+		    display: none;
+		}
+
+	}
+}

@@ -1,0 +1,32 @@
+.im-tip {
+	border: 0;
+	display: none;
+	font-size: .8em;
+	margin-top: 15px;
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 200;
+
+	.arrow {
+		background-image: url('../img/up-arrow.png');
+		background-repeat: no-repeat;
+		height: 10px;
+		left: 50%;
+		margin-left: -8px;
+		position: absolute;
+		top: -10px;
+		width: 15px;
+	}
+
+	.tip-content {
+		background-color: #F7F7F7;
+		border: 1px solid #EEEEEE;
+		border-radius: 5px;
+		font-size: .75em;
+		margin-top: -1px;
+		min-width: 60px;
+		min-height: 28px; 
+		padding: 6px 10px;
+		text-align: center;
+	}
+}

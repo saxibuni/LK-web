@@ -1,0 +1,446 @@
+@import "../frame.scss";
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.bet {
+	height: 100%;
+	position: relative;
+	visibility: hidden;
+	
+	.left-nav {
+		background-color: $left-nav-bk-color;
+		color: #8091AD;
+		font-size: .8em;
+		height: 100%;
+		min-height: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+		position: absolute;
+		transition: left .5s;
+		left: 0;
+		width: 15%;
+		z-index: 40;
+	    transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+	    -webkit-backface-visibility: hidden;
+
+		.title {
+			font-style: oblique;
+			font-size: 1.5em;
+			font-weight: bold;
+			position: relative;
+
+			.title-ssc {
+				cursor: pointer;
+				display: inline-block;
+				height: 55px;
+				line-height: 55px;
+				text-align: center;
+				width: 100%;
+
+				span {
+					color: #8091AD;
+					display: inline-block;
+					height: 55px;
+					line-height: 30px;
+					width: 100%;
+				  	background: url("../customize/logo.png") no-repeat center center;
+				  	background-position-y: 7px;
+				}
+			}
+
+			.title-klc {
+				cursor: pointer;
+				display: inline-block;
+				height: 55px;
+				line-height: 55px;
+				text-align: center;
+				width: 50%;
+
+				span {
+					color: #8091AD;
+					display: inline-block;
+					height: 30px;
+					line-height: 30px;
+					width: 100%;
+				}
+			}
+
+			.selected {
+				span {
+					color: #FFF;
+				}
+			}
+
+			.show-hide-arrow-background {
+				background-image: url('../img/show-hide-arrow-background.png');
+				background-repeat: no-repeat;
+				background-size: 100%;
+				cursor: pointer;
+				height: 42px;
+				position: absolute;
+				right: -12px;
+				transition: all .5s;
+				text-align: center;
+				top: 8px;
+				width: 12px;
+				z-index: 50;
+
+				.show-hide-arrow {
+					background-image: url('../img/show-hide-arrow.png');
+					background-repeat: no-repeat;
+					background-size: 100%;
+					height: 31px;
+					margin: 0 auto;
+					margin-top: 5px;
+					transform: rotateZ(0deg);
+					width: 6px;
+				}
+			}
+		}
+
+		.nav-sidebar {
+			background-color: $left-nav-bk-color;
+			font-weight: bold;
+		}
+
+		.logo {
+			bottom: 20px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			margin: 0 auto;
+			
+			.company-name {
+				color: #FFF;
+				font-size: 20px;
+				font-weight: bold;
+				width: 100%;
+				text-align: center;
+			}
+
+			.game-name {
+				font-size: 12px;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	.main {
+		position: absolute;
+		left: 15%;
+		right: 0;
+		transition: left .5s;
+	    transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+	    -webkit-backface-visibility: hidden;
+	    top: 0;
+	    bottom: 0;
+
+		.higher-z-index {
+			z-index: 130;
+		}
+
+		.nav-title {
+			background-color: #FFF;
+			/*background-image: url('../customize/ad_small.png');*/
+			background-repeat: no-repeat;
+			background-size: 250px 70px;
+			color: $theme-font-color;
+			font-size: .8em;
+			height: 70px;
+			line-height: 70px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			height: 70px;
+
+			.feedback {
+				border: 1px solid transparent;
+				cursor: pointer;
+			    height: 70px;
+			    line-height: 70px;
+				float: right;
+				width: 130px;
+				text-align: center;
+				position: relative;
+
+				div {
+					display: inline-block;
+				}
+
+				.feedback-img {
+					background: url('../img/feedback.png');
+					background-repeat: no-repeat;
+					background-size: 90%;
+					cursor: pointer;
+					height: 31px;
+					width: 30px;
+				}
+
+				.dot {
+					background-color: #F00;
+					border-radius: 50%;
+					height: 12px;
+					position: absolute;
+					left: 35%;
+					top: 13px;
+					width: 12px;
+				}
+				
+				.text {
+					margin-bottom: 22px;
+					vertical-align: middle;
+				}
+			}
+
+			.bet-record {
+				border: 1px solid transparent;
+				cursor: pointer;
+				height: 70px;
+				float: right;
+				width: 130px;
+				text-align: center;
+				position: relative;
+
+				div {
+					display: inline-block;
+				}
+
+				.bet-record-img {
+					background: url('../img/bet-record.png');
+					background-repeat: no-repeat;
+					background-size: 90%;
+					cursor: pointer;
+					height: 31px;
+					width: 30px;
+				}
+
+				@keyframes dot-zoom {
+					50% {
+						font-size: 0.75em;
+						height: 14px;
+						width: 14px;
+					}
+				}
+
+				.dot {
+					background-color: #F00;
+					border-radius: 6px;
+					display: none;
+					font-size: 0.6em;
+					font-weight: bold;
+					height: 12px;
+					position: absolute;
+					left: 35%;
+					padding: 0 4px;
+					transition: all 1s;
+					top: 13px;
+
+					span {
+					    color: #FFF;
+					    display: inherit;
+					    height: 12px;
+					    line-height: 12px;
+					    width: 100%;
+					}
+				}
+
+				.dot-zoom {
+					animation: dot-zoom 1s;
+				}
+
+				.text {
+					margin-bottom: 22px;
+					vertical-align: middle;
+				}
+			}
+
+			.highlight {
+				background-color: #FFF;
+			    border: 1px solid #EEEEEE;
+			    border-bottom: 0;
+			    border-top: 0;
+				margin-top: 0px;
+				height: 71px;
+				line-height: 71px;
+				text-align: center;
+				z-index: 5;
+
+				//& ~ .divider {
+				//	background-color: #FFF;
+				//}
+			}
+
+			.divider {
+				background-color: #EEEEEE;
+				float: right;
+				width: 1px;
+				height: 100%;
+			}
+
+			.balance {
+				display: inline-block;
+				height: 70px;
+				float: right;
+				width: 220px;
+				text-align: center;
+
+				span {
+					display: inline-block;
+				}
+
+				.text {
+					margin-bottom: 22px;
+					vertical-align: middle;
+				}
+
+				.money {
+					display: inline-block;
+					margin-left: 5px;
+					text-align: left;
+				}
+
+				.secret {
+					cursor: pointer;
+					display: inline-block;
+					margin: 0 10px;
+
+					a {
+						display: inline-block;
+						margin-bottom: 21px;
+					}
+				}
+			}
+
+			.user {
+				float: right;
+				height: 70px;
+				width: 200px;
+
+				.text {
+					margin-bottom: 22px;
+					vertical-align: top;
+				}
+
+				.head-image {
+					background: url('../img/head.png');
+				    background-size: 35px 35px;
+				    display: inline-block;
+				    height: 70px;
+				    line-height: 70px;
+				    width: 70px;
+				    background-position: 30px 18px;
+				    background-repeat: no-repeat;
+				}
+
+				.name {
+					display: inline-block;
+					margin-bottom: 55px;
+					margin-left: 5px;
+				}
+			}
+
+			.logo {
+				background-color: #FFF;
+				/*background-image: url("../customize/ad_small.png");*/
+				background-repeat: no-repeat;
+				background-size: 250px 70px;
+				position: absolute;
+				left: 0;
+				margin-left: 15px;
+				top: 0;
+				width: 250px;
+				height: 70px;
+			}
+
+			.big-logo {
+				background-color: #FFF;
+				background-image: url("../customize/ad_big.png");
+				background-repeat: no-repeat;
+				background-size: 800px 170px;
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 70px;
+				width: 800px;
+				height: 170px;
+				z-index: 200;
+			}
+		}
+
+		.content {
+			background-color: #F5F6FA;
+			padding: 10px 15px;
+			padding-bottom: 0;
+			width: 100%;
+			position: absolute;
+			top: 70px;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 1400px) {
+	.bet {
+		.left-nav {
+			width: 17%;
+		}
+
+		.main {
+			left: 17%;
+		}
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.bet {
+		.main {
+			.nav-title {
+				.feedback {
+					font-size: 12px;
+					width: 100px;
+				}
+
+				.bet-record {
+					font-size: 12px;
+					width: 100px;
+				}
+
+				.balance {
+					font-size: 12px;
+					width: 180px;
+
+					.secret {
+						margin: 0 3px;
+					}
+				}
+
+				.user {
+					font-size: 12px;
+					width: 180px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.bet {
+		.left-nav {
+			width: 21%;
+		}
+
+		.main {
+			left: 21%;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ssc",
+  "version": "1.0.0",
+  "authors": [
+    "Philip <Philip@gb2bc.com>"
+  ],
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "HTML5-Reset": "^2.1.3",
+    "html5shiv": "^3.7.3",
+    "datetimepicker": "^2.5.4",
+    "fastclick": "^1.0.6",
+    "PubSubJS": "pubsub-js#^1.5.3",
+    "Modernizr": "http://modernizr.com/download/?-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-geolocation-inlinesvg-smil-svg-svgclippaths-touch-webgl-shiv-mq-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load.zip"
+  }
+}

@@ -1,0 +1,24 @@
+@import '../frame.scss';
+@import '../mixins.scss';
+@import '../reset.scss';
+
+@import '../plugins/IMButton.scss';
+@import '../plugins/IMDialog.scss';
+@import '../plugins/ConfirmDialog.scss';
+@import '../plugins/IMBettingTimes.scss';
+@import '../plugins/IMCheckBox.scss';
+@import '../plugins/IMDatetimepicker.scss';
+@import '../plugins/IMInput.scss';
+@import '../plugins/IMMoneyModel.scss';
+@import '../plugins/IMOverlay.scss';
+@import '../plugins/IMPager.scss';
+@import '../plugins/IMProgressLine.scss';
+@import '../plugins/IMRangeSlider.scss';
+@import '../plugins/IMSelect.scss';
+@import '../plugins/IMTip.scss';
+
+@import '../components/BetOrderDetail.scss';
+@import '../components/ChaseOrderDetail.scss';
+@import '../components/NoticeDialog.scss';
+@import '../util/dialog.scss';
+@import '../pages/RecordsQuery.scss';

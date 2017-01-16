@@ -1,0 +1,48 @@
+.bds-plate {
+	height: 100px;
+	line-height: 100px;
+	margin-top: 20px;
+
+	.ball-item {
+		text-align: center;
+		
+		span {
+			border: 1px solid #C6CADB;
+			border-radius: 20px;
+			color: $theme-bk-color;
+			cursor: pointer;
+			display: inline-block;
+			font-size: .8em;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			transition: all .5s;
+			width: 80px;
+		}
+	}
+
+	.selected {
+		span {
+			background-color: $theme-bk-color;
+			border: 0;
+			color: #FFF;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+	.bds-plate {
+		.name {
+			font-size: .7em;
+		}
+
+		.ball-item {
+			span {
+				font-size: .7em;
+				height: 30px;
+				line-height: 25px;
+				width: 30px;
+			}
+		}
+	}
+}

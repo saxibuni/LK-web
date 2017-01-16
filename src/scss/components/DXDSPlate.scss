@@ -1,0 +1,68 @@
+.dxds-plate {
+	margin-top: 20px;
+
+	.row {
+		height: 50px;
+
+		.col-md-1 {
+			margin-left: 25px;
+		}
+
+		.name {
+		    height: 50px;
+		    line-height: 50px;
+			font-size: .8em;
+	    	font-weight: bold;
+	    	text-align: center;
+		}
+
+		.ball-item {
+			text-align: center;
+			
+			span {
+				border: 1px solid #C6CADB;
+				border-radius: 50%;
+				color: $ball-color;
+				cursor: pointer;
+				display: inline-block;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				transition: all .5s;
+				width: 40px;
+			}
+		}
+
+		.selected {
+			span {
+				background-color: $theme-bk-color;
+				border: 0;
+				color: $theme-bk-font-color;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+	.dxds-plate {
+		.row {
+			.name {
+			    height: 30px;
+			    line-height: 30px;
+				font-size: .7em;
+			}
+
+			.col-md-1 {
+				margin-left: 15px;
+			}
+
+			.ball-item {
+				span {
+					height: 30px;
+					line-height: 25px;
+					width: 30px;
+				}
+			}
+		}
+	}
+}

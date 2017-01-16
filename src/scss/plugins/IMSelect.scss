@@ -1,0 +1,88 @@
+.im-select {
+	background-color: #FFF;
+	display: inline-block;
+	position: relative;
+	width: 140px;
+	z-index: 85;
+
+	button {
+		background: none;
+		border: 1px solid #EEEEEE;
+		border-radius: 5px;
+		color: #A7A7A7;
+		font-size: 12px;
+		height: 30px;
+		line-height: 30px;
+		margin-top: -2px;
+		outline: none;
+		overflow: hidden;
+		padding: 0;
+		padding-left: 5px;
+		position: relative;
+		text-align: left;
+		width: 100%;
+
+		&:hover {
+			background: none;
+		}
+
+		&:active {
+			border: 1px solid $theme-bk-color;
+			border-radius: 2px;
+			box-shadow: none;
+			outline: 0;
+		}
+
+		.select-label {
+			display: inline-block;
+			pointer-events: none;
+		}
+
+		.buttonName {
+			display: inline-block;
+			margin-left: 10px;
+		}
+
+		.select-down-arrow {
+		    background-image: url("../img/select-down-arrow.png");
+		    background-repeat: no-repeat;
+		    background-size: 15px 15px;
+		    background-position: 0 40%;
+		    display: inline-block;
+		    height: 15px;
+		    pointer-events: none;
+		    position: absolute;
+		    right: 7px;
+		    top: 6px;
+		    width: 15px;
+		}
+	}
+
+	.dropdown-menu {
+		top: 40px;
+
+		li {
+			a {
+				color: $theme-font-color;
+			    font-size: 12px;
+			    height: 25px;
+
+				&:hover {
+					background-color: $theme-bk-color;
+					color: #FFF;
+				}
+			}
+		}
+	}
+}
+
+.select-overlay {
+    background: none;
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 75;
+}

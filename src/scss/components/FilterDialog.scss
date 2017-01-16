@@ -1,0 +1,54 @@
+.filter-dialog {
+	@include dialog-frame;
+
+	.dialog-wrapper {
+		@include dialog-wrapper(450px);
+		z-index: 150;
+
+		.dialog {
+			@include dialog(400px, 300px);
+
+			.title {
+				color: #000;
+				font-size: 1.2em;
+				font-weight: bold;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+
+			.content {
+				color: $theme-font-color;
+				font-size: .8em;
+				height: 50px;
+				line-height: 50px;
+				padding-left: 20px;
+			}
+
+			.textarea {
+				height: 80px;
+				width: 100%;
+
+				textarea {
+					color: #000;
+					height: 100%;
+					margin-left: 5%;
+					padding-left: 10px;
+					width: 90%;
+				}
+			}
+
+
+			.button-zone {
+				bottom: 20px;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+
+				.close-filter {
+					width: 200px;
+				}
+			}
+		}
+	}
+}

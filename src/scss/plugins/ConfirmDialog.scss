@@ -1,0 +1,72 @@
+.confirm-dialog {
+	@include dialog-frame;
+
+	.dialog-wrapper {
+		@include dialog-wrapper(400px, auto);
+		z-index: 150;
+
+		.dialog {
+			@include dialog(400px, 200px);
+		  	.title{
+			  color: #000;
+			  font-size: 1.2em;
+			  font-weight: bold;
+			  height: 60px;
+			  line-height: 60px;
+			  text-align: center;
+			}
+			.content {
+			  color: #000;
+			  font-size: 1.2em;
+			  font-weight: bold;
+			  height: 65px;
+			  line-height: 60px;
+			  padding-left: 20px;
+			  text-align: center;
+			  .diawNumber{
+				color: #8c8c8c;
+				font-weight: normal;
+				line-height: 15px;
+				text-align: center;
+				margin-right: 20px;
+				span{
+				  color: #F00;
+				  padding-left: 10px;
+				}
+			  }
+			  .totalMoney{
+				font-weight: normal;
+				line-height: 15px;
+				margin-right: 20px;
+				text-align: center;
+				margin-top: 18px;
+				font-size: 24px;
+				span{
+				  color: #6979B5;
+				  padding-left: 10px;
+				  font-size: 24px;
+				  letter-spacing: 2px;
+				}
+			  }
+			}
+
+			.button-zone {
+				bottom: 20px;
+				left: 5%;
+				position: absolute;
+				text-align: center;
+				width: 90%;
+
+				.cancel {
+					display: inline-block;
+					width: 50%;
+				}
+
+				.ok {
+					display: inline-block;
+					width: 50%;
+				}
+			}
+		}
+	}
+}

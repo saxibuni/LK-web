@@ -1,0 +1,27 @@
+.dds-plate {
+	height: 100px;
+	line-height: 100px;
+
+	ul {
+		.ball-item {
+			border: 1px solid #C6CADB;
+			border-radius: 20px;
+			color: $ball-color;
+			cursor: pointer;
+			display: inline-block;
+			font-size: .8em;
+			height: 40px;
+			line-height: 40px;
+			margin: 0 10px;
+			text-align: center;
+			transition: all .5s;
+			width: 80px;
+
+			&.selected {
+				background-color: $theme-bk-color;
+				border: 0;
+				color: $theme-bk-font-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,146 @@
+.tree {
+	.tree-item {
+		cursor: pointer;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 5px;
+		padding: 0 15px;
+		position: relative;
+
+		box-shadow: 0 0 0 0 #252B45 inset;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+
+		&:hover {
+			box-shadow: 400px 0 0 0 #252B45 inset;
+			color: #BECDE2;
+		}
+
+		.info {
+			div {
+				display: inline-block;
+			}
+
+			.dot {
+				background: none;
+				border: 1px solid #8091AD;
+				border-radius: 3px;
+				height: 6px;
+				line-height: 6px;
+			    margin-bottom: 3px;
+				margin-right: 5px;
+				width: 6px;
+			}
+
+			.name {
+				margin-right: 5px;
+			}
+
+			.status {
+			}
+
+			.new {
+				background-image: url("../img/new.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+			    height: 10px;
+			    margin-left: 5px;
+			    width: 25px;
+			    vertical-align: baseline;
+			}
+
+			.hot {
+				background-image: url("../img/hot.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+			    height: 10px;
+			   	margin-left: 5px;
+			    width: 25px;
+			    vertical-align: baseline;
+			}
+		}
+
+		.cancel {
+			color: #8091AD;
+			cursor: pointer;
+			display: inline-block;
+			font-weight: normal;
+			position: absolute;
+			right: 1em;
+			top: 0;
+			width: 20px;
+		}
+
+		.pre-draw-number {
+			display: none;
+			font-size: 12px;
+			height: 20px;
+			line-height: 20px;
+			position: relative;
+
+			div {
+				position: absolute;
+				font-size: 10px;
+				font-weight: normal;
+				-webkit-transform: scale(0.833333);
+			}
+
+			.text {
+				left: 8px;
+			}
+
+			.draw-number {
+				left: 48px;
+			}
+
+			.time {
+				right: 5px;
+			}
+		}
+
+		.invisible {
+			display: none;
+			width: 0px;
+		}
+
+		.im-progressline {
+			overflow: hidden;
+			top: 8px;
+		}
+	}
+
+	.active {
+		background-color: #252B45;
+		color: #FFF;
+
+		.info {
+			.dot {
+				background: #FFF;
+			}
+		}
+	}	
+
+	.open {
+		height: 65px;
+		line-height: 65px;
+
+		.info {
+			height: 30px;
+			line-height: 45px;
+
+			.dot {
+				background: #FFF;
+			}
+		}
+
+		.cancel {
+			height: 30px;
+			line-height: 30px;
+		}
+
+		.pre-draw-number {
+			display: block;
+		}
+	}	
+}

@@ -1,0 +1,80 @@
+.notice-dialog {
+	@include dialog-frame;
+
+	.dialog-wrapper {	
+		@include dialog-wrapper(450px);
+		z-index: 150;
+
+		.dialog {
+			@include dialog(450px, 300px);
+
+			.title {
+				color: #000;
+				font-size: 1.2em;
+				font-weight: bold;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+
+			.image {
+				text-align: center;
+
+				img {
+					height: 60px;
+					width: 60px;
+				}
+			}
+
+			.sub-title {
+				color: #000;
+				font-weight: bold;
+				font-size: 1em;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+			}
+
+			.content {
+				color: $theme-font-color;
+				font-size: .8em;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+
+				.current-issue {
+					color: #F00;
+				}
+
+				.next-issue {
+					color: #F00;
+				}
+			}
+
+			.button-zone {
+				bottom: 20px;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+
+				.sure {
+					width: 200px;
+				}
+			}
+		}
+
+		.no-sub-title {
+			.sub-title {
+				display: none;
+			}
+
+			.content {
+				height: 80px;
+				line-height: 80px;
+			}
+		}
+	}
+}
+
+
+

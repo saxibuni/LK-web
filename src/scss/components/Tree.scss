@@ -1,0 +1,16 @@
+.tree {
+	position: relative;
+
+	.arrow {
+		background-image: url('../img/left-arrow.png');
+		background-repeat: no-repeat;
+		background-size: 90%;
+		cursor: pointer;
+		height: 16px;
+		position: absolute;
+		right: -2px;
+		transition: top .5s;
+		top: 25px;
+		width: 9px;
+	}
+}

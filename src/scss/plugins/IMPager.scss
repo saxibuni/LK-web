@@ -1,0 +1,40 @@
+.im-pager {
+	li {
+		display: inline-block;
+		margin-right: 5px;
+
+		a {
+			border-radius: 7%;
+			font-size: .7em;
+			text-decoration: none;
+
+			&:hover {
+				background-color: $theme-bk-color;
+			}
+
+			&:visited {
+				background-color: $theme-bk-color;
+			}
+		}
+
+		.btn {
+			background-color: $theme-bk-color;
+			color: #FFF;
+		}
+
+		.item {
+			border: 1px solid #D0D1E6;
+			border-radius: 7%;
+			padding: 6px 12px;
+
+			&:hover {
+				color: #FFF;
+			}
+		}
+
+		.selected {
+			background-color: $theme-bk-color;
+			color: #FFF;
+		}
+	}
+}

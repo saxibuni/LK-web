@@ -1,0 +1,84 @@
+.im-money-model {
+	display: inline-block;
+	font-size: .8em;
+
+	.name {
+		color: $theme-font-color;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.unit {
+		background-color: #FFF;
+		border: 1px solid #DADADA;
+		border-radius: 20px;
+		display: inline-block;
+		position: relative;
+
+		.item {
+			border-radius: 20px;
+			color: #000;
+			cursor: pointer;
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			width: 50px;
+		}
+
+		.yuan {
+			border-right: 0;
+		}
+
+		.jiao {
+
+		}
+
+		.fen {
+			border-right: 0;
+		}
+
+		.trick {
+			background-color: $theme-bk-color;
+			border-radius: 20px;
+			color: $theme-bk-font-color;
+			height: 30px;
+			line-height: 30px;
+			width: 50px;
+			left: 0;
+			top: 0;
+			position: absolute;
+
+			transition: left 0.5s;
+			-moz-transition: left 0.5s; 
+			-webkit-transition: left 0.5s;
+			-o-transition: left 0.5s;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+	.im-money-model {
+		font-size: .7em;
+
+		.unit {
+			.item {
+				border-radius: 15px;
+				color: #000;
+				cursor: pointer;
+				display: inline-block;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				width: 35px;
+			}
+
+			.trick {
+				border-radius: 15px;
+				height: 25px;
+				line-height: 25px;
+				width: 35px;
+			}
+		}
+	}
+}

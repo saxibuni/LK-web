@@ -1,0 +1,228 @@
+$ballSize: 40px;
+
+.number-plate, .czw-plate {
+	margin-left: 20px;
+	margin-top: 20px;
+
+	.betting-number {
+		.row {
+			margin-bottom: 5px;
+		}
+
+		.center-ball {
+			.ball-item {
+				margin-bottom: 5px;
+				text-align: left;
+			}
+		}
+
+		.name-item {
+			text-align: left;
+
+			span {
+				display: inline-block;
+				font-size: .9em;
+				font-weight: bold;
+				line-height: 40px;
+			}
+		}
+
+		.ball-item {
+			text-align: center;
+
+			span {
+				display: inline-block;
+				border: 1px solid #C6CADB;
+				border-radius: 50%;
+				color: $ball-color;
+				cursor: pointer;
+				font-size: .8em;
+				height: $ballSize;
+				line-height: $ballSize;
+				text-align: center;
+				transition: all .5s;
+				width: $ballSize;
+			}
+
+			&.selected {
+				span {
+					background-color: $theme-bk-color;
+					border: 0;
+					color: $theme-bk-font-color;
+				}
+			}
+		}
+
+		.fun-ball-item {
+			text-align: center;
+
+			span {
+				display: inline-block;
+				border: 1px solid #C6CADB;
+				border-radius: 20px;
+				color: $ball-color;
+				cursor: pointer;
+				font-size: .8em;
+				height: $ballSize;
+				line-height: $ballSize;
+				text-align: center;
+				transition: all .5s;
+				width: $ballSize*2;
+			}
+
+			&.selected {
+				span {
+					background-color: $theme-bk-color;
+					border: 0;
+					color: $theme-bk-font-color;
+				}
+			}
+		}
+
+		.zone-ball-item {
+			text-align: center;
+
+			span {
+				display: inline-block;
+				border: 1px solid #C6CADB;
+				border-radius: 20px;
+				color: $ball-color;
+				cursor: pointer;
+				font-size: .8em;
+				height: $ballSize;
+				line-height: $ballSize;
+				text-align: center;
+				transition: all .5s;
+				width: $ballSize*2;
+			}
+
+			&.selected {
+				span {
+					background-color: $theme-bk-color;
+					border: 0;
+					color: $theme-bk-font-color;
+				}
+			}
+		}
+
+		.run-item {
+			span {
+				background-color: #ABB4D6;
+				border: 0;
+				color: #FFF;
+			}
+		}
+	}
+
+	.betting-operation {
+		padding-right: 20px;
+
+		.row {
+			margin-bottom: 10px;
+		}
+
+		.operation-item {
+			text-align: center;
+			height: $ballSize;
+			line-height: $ballSize;
+
+			span {
+				border: 1px solid #C6CADB;
+				border-radius: 20px;
+				color: $ball-color;
+				cursor: pointer;
+				display: inline-block;
+				font-size: .8em;
+				height: $ballSize;
+				line-height: $ballSize;
+				text-align: center;
+				transition: all .5s;
+				width: $ballSize*1.5;
+			}
+
+			.blank {
+				border: 0;
+				background: none;
+				visibility: hidden;
+				width: 0;
+				z-index: -1;
+			}
+
+			&.selected {
+				span {
+					background-color: $theme-bk-color;
+					border: 0;
+					color: $theme-bk-font-color;
+				}
+			}
+
+			&:last-child:active {
+				span {
+					background-color: $theme-bk-color;
+					border: 0;
+					color: $theme-bk-font-color;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	$ballSize: 30px;
+
+	.number-plate, .czw-plate {
+		.betting-number {
+			.row {
+				margin-bottom: 0;
+			}
+
+			.name-item {
+				span {
+					font-size: .7em;
+				}
+			}
+
+			.ball-item {
+				span {
+					font-size: .7em;
+					height: $ballSize;
+					line-height: $ballSize;
+					width: $ballSize;
+				}
+			}
+
+			.fun-ball-item {
+				span {
+					font-size: .7em;
+					height: $ballSize;
+					line-height: $ballSize;
+					width: $ballSize*2;
+				}
+			}
+
+			.zone-ball-item {
+				span {
+					font-size: .7em;
+					height: $ballSize;
+					line-height: $ballSize;
+					width: $ballSize*2;
+				}
+			}
+		}
+
+		.betting-operation {
+			.operation-item {
+				height: $ballSize;
+				line-height: $ballSize;
+			
+				span {
+					font-size: .7em;
+					height: $ballSize;
+					line-height: $ballSize;
+					width: $ballSize*1.5;
+				}
+			}
+		}
+	}
+}

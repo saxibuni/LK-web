@@ -1,0 +1,93 @@
+.im-button {
+	background-color: $theme-bk-color;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	overflow: hidden;
+	padding: 0 10px;
+	position: relative;
+	text-align: center;
+	width: 150px;
+
+	img {
+		height: 20px;
+		vertical-align: text-bottom;
+		width: 20px;
+
+		& + .text {
+			margin-left: 5px;
+		}
+	}
+
+	.text {
+		color: $theme-bk-font-color;
+		font-size: .8em;
+		font-weight: bold;
+		vertical-align: bottom;
+	}
+
+	.button-overturn {
+		position: relative;
+		transition: all 0.3s;
+	}
+
+	.im-button-wrapper {
+		position: absolute;
+		display: inline-block;
+		left: 0;
+		right: 0;
+		top: 0;
+		transition: top .3s;
+
+		.im-button-row1 {
+			display: none;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		.im-button-row2 {
+			display: none;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		.im-button-row3 {
+			height: 40px;
+			line-height: 40px;
+		}
+	}
+}
+
+.btn-disabled {
+	opacity: 0.9;
+	pointer-events:none;
+	
+	.text {
+		opacity: .5;
+	}
+
+	img {
+		opacity: .5;
+	}
+}
+
+.btn-hover {
+	.im-button-wrapper {
+		top: -200%;
+
+		.im-button-row1 {
+			display: block !important;
+		}
+
+		.im-button-row2 {
+			display: block !important;
+		}
+	}
+
+	&:hover {
+		.im-button-wrapper {
+			top: 0;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+@keyframes start-animation1 {
+    0% {
+    	width: 0;
+    }
+}
+
+@keyframes start-animation2 {
+    100% {
+    	width: 0;
+    }
+}
+
+@keyframes stop-animation {
+    100% {
+    	width: 0;
+    }
+}
+
+@keyframes show-background {
+	100% {
+		background-color: #5B6483;
+	}
+}
+
+.im-progressline {
+	background-color: transparent;
+	border: 0;
+	height: 2px;
+	opacity: 0;
+	position: relative;
+	width: 100%;
+
+	.progress {
+		background: -prefix-linear-gradient(90deg, #6F7AB8, #FFFFFF);
+		background: linear-gradient(90deg, #6F7AB8, #FFFFFF);
+		border: 0;
+		height: 2px;
+		transition-property: width;
+		width: 100%;
+	}
+
+	.active {
+		background: -prefix-linear-gradient(90deg, #73692C, #FDC437);
+		background: linear-gradient(90deg, #73692C, #FDC437);
+	}
+}
+
+.start {
+	opacity: 1;
+	animation-delay: .3s;
+	animation-duration: .1s;
+	animation-name: show-background;
+
+	.progress {
+		opacity: 1;
+	    animation-delay: 0s, .3s;
+	    animation-duration: .3s, 480s;
+	    animation-name: start-animation1, start-animation2;
+	    animation-iteration-count: 1, 1;
+	}
+}
+
+.stop {
+	opacity: 1;
+
+	.progress {
+		opacity: 1;
+	    animation-delay: 0s;
+	    animation-duration: .3s;
+	    animation-name: stop-animation;
+	    animation-iteration-count: 1;
+	}
+}

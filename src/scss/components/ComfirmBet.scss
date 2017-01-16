@@ -1,0 +1,354 @@
+.confirm-bet {
+	background-color: #FFF;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	height: 100%;
+	position: relative;
+	width: 100%;
+
+	.page1 {
+		height: 100%;
+		position: relative;
+		width: 100%;
+
+		.info-zone {
+			bottom: 50px;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			padding-top: 5%;
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			.left {
+				text-align: center;
+				border-right: 1px solid #DCDCDC;
+
+				.name {
+					&:nth-child(2) {
+						margin-top: 10px;
+					}
+				}
+			}
+
+			.right {
+				text-align: center;
+			}
+
+			.name {
+				color: $theme-font-color;
+				font-size: .8em;
+			}
+
+			.value {
+				color: $theme-bk-color;
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+		}
+
+		.button-zone {
+			bottom: 0;
+		    height: 50px;
+		    left: 0;
+		    position: absolute;
+		    width: 100%;
+
+			.confirm-bet-button {
+				border-radius: 0;
+				padding: 0;
+				width: 100%;
+				@include im-button(50px);
+
+				span {
+					font-size: 1.2em;
+					font-weight: bold;
+				}
+			}
+		  .but-noClick{
+			pointer-events: none;
+		  }
+		}
+
+		@keyframes bet-success-animate {
+			0% {
+			    height: 95px;
+			    line-height: 95px;
+			    width: 300px;
+			    font-size: 3em;
+			}
+		}
+
+		.bet-success-stamp {
+		    position: absolute;
+		    opacity: 0;
+		    box-shadow: 5px 5px 5px #888888;
+		    color: #A8A8A8;
+		    width: 180px;
+		    font-size: 1.6em;
+		    transition: all .3s;
+		    transform: rotateZ(25deg);
+		    background: transparent;
+		    border: 1px solid #A8A8A8;
+		    text-align: center;
+		    border-radius: 5px;
+		    top: 45px;
+		    height: 55px;
+		    line-height: 55px;
+		    left: 30%;
+		}
+
+		.bet-success-animate {
+			opacity: 1;
+			animation: bet-success-animate .3s;
+		}
+	}
+
+	.page2 {
+		display: none;
+		height: 100%;
+		position: relative;
+		width: 100%;
+
+		.error-info {
+			height: 100px;
+			line-height: 100px;
+			padding: 15px;
+
+			.cry {
+				display: inline-block;
+				text-align: center;
+				width: 30%;
+
+				img {
+					height: 60%;
+					line-height: 60%;
+					width: 60%;
+				}
+			}
+
+			.info {
+				display: inline-block;
+				font-size: .8em;
+				width: 70%;
+
+				span {
+					display: inline-block;
+					font-size: .9em;
+					height: 20px;
+					line-height: 20px;
+				}
+			}
+		}
+
+		.button-zone {
+			bottom: 0;
+		    height: 50px;
+		    left: 0;
+		    position: absolute;
+		    width: 100%;
+
+			.bet-failed-button {
+				background-color: #E05A5B;
+				border-radius: 0;
+				padding: 0;
+				width: 100%;
+				@include im-button(50px);
+
+				span {
+					font-size: 1.2em;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.page3 {
+		display: none;
+		height: 100%;
+    	overflow: hidden;
+		position: relative;
+		width: 100%;
+
+		.success-info {
+			bottom: 50px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			text-align: center;
+
+			img {
+				height: 74px; 
+				margin-top: 35px;
+				width: 316px;
+			}
+
+			.smile-face {
+			    float: left;
+			    height: 100%;
+			    text-align: right;
+			    width: 30%;
+
+				img {
+				    height: 60px;
+				    margin-top: 28%;
+				    width: 60px;
+				}
+			}
+
+			.info {
+				float: left;
+				font-size: .8em;
+				height: 100%;
+				width: 60%;
+
+				.info1 {
+					display: block;
+					font-size: 1.5em;
+					font-weight: bold;
+					height: 80px;
+					line-height: 80px;
+					text-align: center;
+				}
+
+				.info2 {
+				    display: block;
+				    font-size: .9em;
+				    height: 30px;
+				    line-height: 30px;
+				    padding: 0 10px;
+				    text-align: center;
+				}
+			}
+		}
+
+		.button-zone {
+			bottom: 0;
+		    height: 50px;
+		    left: 0;
+		    position: absolute;
+		    width: 100%;
+
+			.bet-finish-button {
+				background-color: $theme-bk-color;
+				border-radius: 0;
+				padding: 0;
+				width: 100%;
+				@include im-button(50px);
+
+				span {
+					font-size: 1.2em;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1400px) { 
+	.confirm-bet {
+		.page3 {
+			.success-info {
+				img {
+					height: 56px;
+					width: 237px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.confirm-bet {
+		.page1 {
+			.info-zone {
+				padding-top: 10%;
+
+				.name {
+					font-size: .7em;
+				}
+
+				.value {
+					font-size: 1em;
+				}
+			}
+
+			.button-zone {
+				.bet-failed-button {
+					span {
+						font-size: .8em;
+					}
+				}
+			}
+		}
+
+		.page2 {
+			.error-info {
+				height: 75%;
+
+				.info {
+					span {
+						font-size: .8em;
+					}
+				}
+			}
+
+			.button-zone {
+				height: 25%;
+				
+				.bet-failed-button {
+					span {
+						font-size: .8em;
+					}
+				}
+			}
+		}
+
+		.page3 {
+			.success-info {
+				.smile-face {
+					img {
+					    margin-top: 45%;
+					}
+				}
+
+				.info {
+					.info1 {
+						font-size: 1.2em;
+						height: 60px;
+						line-height: 60px;
+					}
+
+					.info2 {
+					    font-size: .8em;
+					    height: 30px;
+					    line-height: 30px;
+					}
+				}
+			}
+
+			.button-zone {
+				bottom: 0;
+			    height: 50px;
+			    left: 0;
+			    position: absolute;
+			    width: 100%;
+
+				.bet-finish-button {
+					background-color: $theme-bk-color;
+					border-radius: 0;
+					padding: 0;
+					width: 100%;
+					@include im-button(50px);
+
+					span {
+						font-size: 1.2em;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}

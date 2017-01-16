@@ -1,0 +1,86 @@
+.dice-plate {
+	padding: 20px 0;
+
+	.sum-ul {
+		height: 75px;
+		line-height: 75px;
+		margin-left: 2%;
+		width: 80%;
+
+		li {
+			display: inline-block;
+			border: 1px solid #C6CADB;
+			border-radius: 50%;
+			color: $theme-bk-color;
+			cursor: pointer;
+			font-size: 1em;
+			height: 60px;
+			line-height: 60px;
+			margin: 0 2%;
+			text-align: center;
+			transition: all .5s;
+			width: 60px;
+
+			&.selected {
+				background-color: $theme-bk-color;
+				border: 0;
+				color: #FFF;
+			}
+		}
+	}
+
+	.dtyt-ul {
+		height: 150px;
+		line-height: 150px;
+		margin-left: 2%;
+
+		li {
+			cursor: pointer;
+			display: inline-block;
+			margin-right: 20px;
+		}
+	}
+
+	.big-ul {
+		height: 50px;
+		line-height: 50px;
+		margin-left: 2%;
+
+		.big-ul-item {
+			cursor: pointer;
+			display: inline-block;
+
+			.small-ul {
+				display: inline-block;
+				margin-left: 20px;
+				width: 115px;
+				text-align: left;
+
+				li {
+					display: inline-block;
+					margin-left: 2px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+	.dice-plate {
+		.sum-ul {
+			li {
+				height: 45px;
+				line-height: 45px;
+				width: 45px;
+			}
+		}
+
+		.big-ul {
+			.big-ul-item {
+				.small-ul {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}

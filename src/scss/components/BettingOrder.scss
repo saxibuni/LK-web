@@ -1,0 +1,136 @@
+.betting-order {
+	background-color: #FFF;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	height: 100%;
+	padding: 5px;
+	position: relative;
+	width: 100%;
+	margin: 5px 0;
+
+	.table {
+		width: 100%;
+
+		.thead, .tbody {
+			height: 150px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			position: relative;
+
+			.tr {
+				border: 0;
+				cursor: pointer;
+				height: 30px;
+				left: 0;
+				position: absolute;
+				transition: all .3s;
+				width: 100%;
+
+				.td {
+					border: 0;
+					color: $theme-font-color;
+					display: inline-block;
+				    font-size: 11px;
+				    text-align: center;
+
+					.dot {
+						background-color: #FFF;
+						border: 1px solid #DCDCDC;
+						border-radius: 4px;
+						display: inline-block;
+						height: 8px;
+						width: 8px;
+					}
+
+					.cancel {
+						cursor: pointer;
+						display: none;
+					}
+
+					span {
+						display: inline-block;
+					    height: 30px;
+					    line-height: 30px;
+						width: 100%;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+					}
+				}
+
+				.td0 {
+					width: 5%;
+				}
+
+				.td1 {
+					width: 30%;
+				}
+
+				.td2 {
+					width: 15%;
+				}
+
+				.td3 {
+					width: 15%;
+				}
+
+				.td4 {
+					width: 15%;
+				}
+
+				.td5 {
+					width: 15%;
+				}
+
+				.td6 {
+					width: 15%;
+				}
+
+				.td7 {
+					width: 5%;
+				}
+
+				&:hover {
+					.td {
+						border-bottom: 1px solid #DCDCDC;
+
+						.dot {
+							background-color: #DCDCDC;
+							border: 1px solid #DCDCDC;
+						}
+
+						.cancel {
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+
+		.thead {
+			height: 25px;
+			overflow: hidden;
+			position: relative;
+
+			.tr {
+				cursor: default;
+
+				span {
+					height: 25px;
+					line-height: 25;
+				}
+			}
+		}
+	}
+
+	.notice {
+		display: none;
+		height: 100%;
+		text-align: center;
+		width: 100%;
+
+		img {
+			margin-top: 30px;
+		}
+	}
+}

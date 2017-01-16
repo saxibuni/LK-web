@@ -1,0 +1,51 @@
+.playing-description-tip {
+	background-color: #FFF;
+	border: 1px solid #DFDFDF;
+	border-radius: 5px; 
+	display: none;
+	font-size: 12px;
+	height: auto;
+	position: absolute;
+	right: 0px;
+	text-align: left;
+	top: 50px;
+	width: 250px;
+	z-index: 10;
+
+	.method-name {
+		border-bottom: 1px solid #DFDFDF;
+		color: $theme-bk-color;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 10px;
+	}
+
+	.select-method {
+		border-bottom: 1px solid #DFDFDF;
+		min-height: 25px;
+		padding: 5px 10px;
+		line-height: 1.6;
+		width: 100%;
+	}
+
+	.winning-rule {
+		min-height: 50px;
+		padding: 5px 10px;
+		line-height: 1.6;
+		width: 100%;
+	}
+
+	& + .arrow {
+		background-image: url("../img/left-arrow.png");
+		background-repeat: no-repeat;
+		background-size: 90%;
+		cursor: pointer;
+		display: none;
+		height: 16px;
+		position: absolute;
+		right: 93px;
+		transform: rotateZ(180deg);
+		top: 25px;
+		width: 9px;
+	}
+}

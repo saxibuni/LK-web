@@ -1,0 +1,92 @@
+.im-betting-times {
+	.name {
+		color: $theme-font-color;
+		display: inline-block;
+		font-size: .8em;
+	}
+
+	.control {
+		background-color: #FFF;
+		border: 1px solid #DADADA;
+		border-radius: 20px;
+		display: inline-block;
+		position: relative;
+		z-index: 80;
+
+		.plus {
+			cursor: pointer;
+			display: inline-block;
+			height: 25px;
+			text-align: center;
+			width: 30px;
+		}
+
+		.select {
+			border-left: 1px solid #DADADA;
+			border-right: 1px solid #DADADA;
+			display: inline-block;
+
+			input {
+				border: none;
+				color: #000;
+				font-size: .8em;
+				height: 26px;
+				line-height: 26px;
+				text-align: center;
+				width: 50px;
+			}
+
+			ul {	
+				background-color: #FFF;
+				border: 1px solid #DADADA;
+				border-bottom: none;
+				display: none;
+				color: $theme-font-color;
+				font-size: .8em;
+				position: absolute;
+				width: 50px;
+
+				li {
+					border-bottom: 1px solid #DADADA;
+					cursor: pointer;
+					height: 25px;
+					line-height: 25px;
+					text-align: center;
+
+					&:hover {
+						background-color: $theme-bk-color;
+						color: #FFF;
+					}
+				}
+			}
+		}
+
+		.minus {	
+			cursor: pointer;
+			display: inline-block;
+			height: 25px;
+			text-align: center;
+			width: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+	.im-betting-times {
+		.name {
+			font-size: .7em;
+		}
+
+		.control {
+			.select {
+				input {
+					font-size: .7em;
+				}
+
+				ul {	
+					font-size: .7em;
+				}
+			}
+		}
+	}
+}

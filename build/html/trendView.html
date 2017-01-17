@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="prefetch" href="../img/bingo.png" />
+		<title>时时彩</title>
+
+        <link rel="stylesheet" href="../css/trendView.css">
+
+        <style type="text/css">
+			@font-face {
+			    font-family: 'MyFont';
+			    src: url('../fonts/Arial.ttf') format('truetype');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container trend-view">
+			<div class="canvas"></div>
+
+			<div class="row lotterys">
+				<div class="col-md-2"><span class="lottery-item left-padding-0" gameCode="LT" market="CQ">重庆时时彩</span></div>
+				<div class="col-md-2"><span class="lottery-item" gameCode="LT" market="TJ">天津时时彩</span></div>
+				<div class="col-md-2"><span class="lottery-item" gameCode="LT" market="XJ">新疆时时彩</span></div>
+<!-- 				<div class="col-md-2"><span class="lottery-item" gameCode="LT" market="JX">江西时时彩</span></div> -->
+				<div class="col-md-2"><span class="lottery-item" gameCode="HL11x5" market="SH">上海11选5</span></div>
+				<div class="col-md-2"><span class="lottery-item" gameCode="HL11x5" market="GD">广东11选5</span></div>
+				<div class="col-md-2"><span class="lottery-item" gameCode="HL11x5" market="JX">江西11选5</span></div>
+				<div class="col-md-2"><span class="lottery-item" gameCode="HL11x5" market="SD">山东11选5</span></div>
+				<div class="col-md-2"><span class="lottery-item" gameCode="K3" market="JS">江苏快三</span></div>
+				<div class="col-md-2"><span class="lottery-item" gameCode="K3"  market="AH">安徽快三</span></div>
+				<!--<div class="col-md-2"><span class="lottery-item" gameCode="LT" market="CN3D">福彩3D</span></div>-->
+			</div>
+
+			<div class="row playing-familys">
+				<div class="col-md-1"><span class="family-item left-padding-0" betType = '0'>五星</span></div>
+				<div class="col-md-1"><span class="family-item" betType = '1'>四星</span></div>
+				<div class="col-md-1"><span class="family-item" betType = '2'>前三</span></div>
+				<div class="col-md-1"><span class="family-item" betType = '3'>中三</span></div>
+				<div class="col-md-1"><span class="family-item" betType = '4'>后三</span></div>
+				<div class="col-md-1"><span class="family-item" betType = '5'>前二</span></div>
+				<div class="col-md-1"><span class="family-item" betType = '6'>后二</span></div>
+			</div>
+
+			<div class="bar clearfix">
+				<div class="zone1"></div>
+
+				<div class="zone2">
+					<ul>
+						<li><span class="date-item selected" data-value="30">近30期</span></li>
+						<li><span class="date-item" data-value="50">近50期</span></li>
+						<li><span class="date-item" data-value="today">今日数据</span></li>
+						<li><span class="date-item" data-value="2days">近2天</span></li>
+						<li><span class="date-item" data-value="5days">近5天</span></li>
+					</ul>
+				</div>
+
+				<div class="zone3"></div>
+			</div>
+
+			<div class="table">
+				<table class="chart-table" id="J-chart-table">
+		            <thead class="thead">
+		                <!--<tr class="title-text">-->
+		                    <!--<th colspan="3" rowspan="2" class="right-border">期号</th>-->
+		                    <!--<th class="gap"></th>-->
+		                    <!--<th>开奖号码</th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                    <!--<th colspan="12" class="right-border">万位</th>-->
+		                    <!--<th colspan="12" class="right-border">千位</th>-->
+		                    <!--<th colspan="12" class="right-border">百位</th>-->
+		                    <!--<th colspan="12" class="right-border">十位</th>-->
+		                    <!--<th colspan="12" class="right-border">个位</th>-->
+		                    <!--<th colspan="12" class="right-border">号码分布</th>-->
+		                <!--</tr>-->
+		                <!--<tr class="title-number">-->
+		                	<!--<th class="gap"></th>-->
+		                    <!--<th>-->
+		                    	<!--<span class="checkbox-all"></span>-->
+		                    <!--</th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                    <!--<th class="gap"></th>-->
+		                    <!--<th><span>0</span></th>-->
+		                    <!--<th><span>1</span></th>-->
+		                    <!--<th><span>2</span></th>-->
+		                    <!--<th><span>3</span></th>-->
+		                    <!--<th><span>4</span></th>-->
+		                    <!--<th><span>5</span></th>-->
+		                    <!--<th><span>6</span></th>-->
+		                    <!--<th><span>7</span></th>-->
+		                    <!--<th><span>8</span></th>-->
+		                    <!--<th><span>9</span></th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                    <!--<th class="gap"></th>-->
+		                    <!--<th><span>0</span></th>-->
+		                    <!--<th><span>1</span></th>-->
+		                    <!--<th><span>2</span></th>-->
+		                    <!--<th><span>3</span></th>-->
+		                    <!--<th><span>4</span></th>-->
+		                    <!--<th><span>5</span></th>-->
+		                    <!--<th><span>6</span></th>-->
+		                    <!--<th><span>7</span></th>-->
+		                    <!--<th><span>8</span></th>-->
+		                    <!--<th><span>9</span></th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                    <!--<th class="gap"></th>-->
+		                    <!--<th><span>0</span></th>-->
+		                    <!--<th><span>1</span></th>-->
+		                    <!--<th><span>2</span></th>-->
+		                    <!--<th><span>3</span></th>-->
+		                    <!--<th><span>4</span></th>-->
+		                    <!--<th><span>5</span></th>-->
+		                    <!--<th><span>6</span></th>-->
+		                    <!--<th><span>7</span></th>-->
+		                    <!--<th><span>8</span></th>-->
+		                    <!--<th><span>9</span></th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                    <!--<th class="gap"></th>-->
+		                    <!--<th><span>0</span></th>-->
+		                    <!--<th><span>1</span></th>-->
+		                    <!--<th><span>2</span></th>-->
+		                    <!--<th><span>3</span></th>-->
+		                    <!--<th><span>4</span></th>-->
+		                    <!--<th><span>5</span></th>-->
+		                    <!--<th><span>6</span></th>-->
+		                    <!--<th><span>7</span></th>-->
+		                    <!--<th><span>8</span></th>-->
+		                    <!--<th><span>9</span></th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                    <!--<th class="gap"></th>-->
+		                    <!--<th><span>0</span></th>-->
+		                    <!--<th><span>1</span></th>-->
+		                    <!--<th><span>2</span></th>-->
+		                    <!--<th><span>3</span></th>-->
+		                    <!--<th><span>4</span></th>-->
+		                    <!--<th><span>5</span></th>-->
+		                    <!--<th><span>6</span></th>-->
+		                    <!--<th><span>7</span></th>-->
+		                    <!--<th><span>8</span></th>-->
+		                    <!--<th><span>9</span></th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                    <!--<th class="gap"></th>-->
+		                    <!--<th><span>0</span></th>-->
+		                    <!--<th><span>1</span></th>-->
+		                    <!--<th><span>2</span></th>-->
+		                    <!--<th><span>3</span></th>-->
+		                    <!--<th><span>4</span></th>-->
+		                    <!--<th><span>5</span></th>-->
+		                    <!--<th><span>6</span></th>-->
+		                    <!--<th><span>7</span></th>-->
+		                    <!--<th><span>8</span></th>-->
+		                    <!--<th><span>9</span></th>-->
+		                    <!--<th class="gap right-border"></th>-->
+		                <!--</tr>-->
+		            </thead>
+
+		            <tbody class="tbody">
+		            </tbody>
+					<tbody class="tfoot">
+					</tbody>
+		        </table>
+			</div>
+		</div>
+
+        <script src="../js/trendView.js"></script>
+
+	</body>
+</html>

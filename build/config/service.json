@@ -1,5 +1,5 @@
 {
 	"debug" : true,
 	"service": "ws://gs.keno.staging.spadegaming.biz:7788/websocket",
-	"trendsUrl": "https://rawgit.com/saxibuni/LK-web/master/trends/"
+	"trendsUrl": "https://cdn.jsdelivr.net/gh/saxibuni/LK-web/trends/"
 }
